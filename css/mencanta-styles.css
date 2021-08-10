@@ -1,0 +1,79 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.navbar {
+  height: 70px;
+  width: 100vw;
+  position: relative;
+}
+.navbar__burger-menu img {
+  height: 35px;
+  width: 35px;
+  margin: 15px;
+  position: absolute;
+}
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero {
+  height: 55vh;
+  width: 100vw;
+  background-image: url("/images/banner/banner1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+}
+.hero__text {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.hero__button {
+  width: 230px;
+  margin: 10px auto;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #BC9428;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+}

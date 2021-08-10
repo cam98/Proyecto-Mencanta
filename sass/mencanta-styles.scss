@@ -1,0 +1,87 @@
+$Fuente1: 'Poppins', sans-serif;
+$Fuente2: 'DM Serif Display', serif;
+$color-Mencanta: #F3C2C7;
+$color-secundario: #dad6d6;
+$color-contraste: #BC9428;
+$color-gris: #585858;
+$color-oscuro: #29292E;
+$color-claro: #FFFFFF;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $Fuente1;
+    font-size: 14px;
+}
+
+.navbar {
+    height: 70px;
+    width: 100vw;
+    position: relative;
+
+    &__burger-menu img {
+        height: 35px;
+        width: 35px;
+        margin: 15px;
+        position: absolute;
+    }
+
+    &__logo {
+        display: flex;
+        padding-top: 15px;
+        justify-content: center;
+    }
+}
+
+
+.hero {
+    height: 55vh;
+    width: 100vw;
+    background-image: url("/images/banner/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: flex;
+        width: 90%;
+        height: 75%;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+        line-height: 32px;
+        color: $color-claro;
+    }
+
+    &__button {
+        width: 230px;
+        margin: 10px auto;
+        padding: 10px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-claro;
+        background-color: $color-contraste;
+
+    }
+    
+}
+
+h1 {
+    font-family: $Fuente2;
+}
+
+
