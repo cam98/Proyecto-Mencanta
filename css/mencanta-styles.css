@@ -10,6 +10,10 @@ body {
   font-size: 14px;
 }
 
+h1 {
+  font-family: "DM Serif Display", serif;
+}
+
 .navbar {
   height: 70px;
   width: 100vw;
@@ -74,6 +78,28 @@ body {
   background-color: #BC9428;
 }
 
-h1 {
-  font-family: "DM Serif Display", serif;
+.main-description {
+  width: 92%;
+  margin: 20px auto;
+  position: relative;
+  color: #29292E;
+}
+.main-description__text p {
+  padding-top: 15px;
+}
+.main-description__image {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  opacity: 0.1;
+}
+
+.services {
+  width: 92%;
+  margin: 0 auto;
+}
+.services__title {
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
 }
