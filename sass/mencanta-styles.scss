@@ -113,5 +113,78 @@ h1 {
         font-weight: 300;
         text-align: center;
     }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        padding-top: 25px;
+        border-top: 2px solid $color-contraste;
+
+        .service__container {
+            height: 170px;
+            width: 345px;
+            margin: 0 auto;
+
+            a {
+                position: relative;
+                margin: 0 auto;
+                font-family: $Fuente2;
+                font-size: 40px;
+                text-decoration: none;
+                color: $color-oscuro;
+
+                p {
+                    width: 80%;
+                    position: absolute;
+                    bottom: 130%;
+                    right: 10%;
+                    text-align: center;
+                    line-height: 40px;
+                }
+
+                img {
+                    height: 170px;
+                    width: 345px;
+                    object-fit: cover;
+                    object-position: center;
+                    opacity: 0.3;
+                }
+
+                .six {
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+        }
+        
+    }
+
+    &__quote {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 50px auto;
+        position: relative;
+
+        img {
+            height: 52px;
+            width: 88px;
+            position: absolute;
+            top: -13%;
+            left: 35%;
+        }
+
+        &-container {
+            padding-top: 35px;
+            border-top: 2px solid $color-contraste;
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+
+        }
+    }
 }
 
