@@ -154,7 +154,7 @@ h1 {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .services__container .service__container a .six {
   -o-object-fit: cover;
