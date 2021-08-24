@@ -1,7 +1,7 @@
 $Fuente1: 'Poppins', sans-serif;
 $Fuente2: 'DM Serif Display', serif;
 $color-Mencanta: #F3C2C7;
-$color-secundario: #dad6d6;
+$color-secundario: #F2DDDF;
 $color-contraste: #BC9428;
 $color-gris: #585858;
 $color-oscuro: #29292E;
@@ -14,12 +14,18 @@ $color-claro: #FFFFFF;
     margin: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: $Fuente1;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 h1 {
+    font-size: 32px;
+    font-weight: 300;
     font-family: $Fuente2;
 }
 
@@ -39,12 +45,17 @@ h1 {
         display: flex;
         padding-top: 15px;
         justify-content: center;
+
+         img {
+             width: 68px;
+             height: 48px;
+         }
     }
 }
 
 
 .hero {
-    height: 55vh;
+    height: 60vh;
     width: 100vw;
     background-image: url("/images/banner/banner1.jpg");
     background-position: center;
@@ -62,10 +73,10 @@ h1 {
 
     &__text {
         margin-bottom: 10px;
-        font-size: 30px;
+        font-size: 3.0rem;
         font-weight: 200;
         text-align: center;
-        line-height: 32px;
+        line-height: 3.2rem;
         color: $color-claro;
     }
 
@@ -109,8 +120,8 @@ h1 {
     margin: 0 auto;
 
     &__title {
-        font-size: 36px;
-        font-weight: 300;
+        font-size: 3.6rem;
+        font-weight: 400;
         text-align: center;
     }
 
@@ -122,15 +133,14 @@ h1 {
         border-top: 2px solid $color-contraste;
 
         .service__container {
-            height: 170px;
-            width: 345px;
-            margin: 0 auto;
+            height: 120px;
+            width: 325px;
+            align-self: center;
 
             a {
                 position: relative;
-                margin: 0 auto;
                 font-family: $Fuente2;
-                font-size: 40px;
+                font-size: 3.0rem;
                 text-decoration: none;
                 color: $color-oscuro;
 
@@ -140,15 +150,15 @@ h1 {
                     bottom: 130%;
                     right: 10%;
                     text-align: center;
-                    line-height: 40px;
+                    line-height: 3.5rem;
                 }
 
                 img {
-                    height: 170px;
-                    width: 345px;
+                    height: 120px;
+                    width: 325px;
                     object-fit: cover;
                     object-position: center;
-                    opacity: 0.3;
+                    opacity: 0.4;
                 }
 
                 .six {
@@ -171,8 +181,8 @@ h1 {
             height: 52px;
             width: 88px;
             position: absolute;
-            top: -13%;
-            left: 35%;
+            bottom: calc(100% - 28px);
+            left: calc(50% - 44px);
         }
 
         &-container {
@@ -180,7 +190,7 @@ h1 {
             border-top: 2px solid $color-contraste;
 
             p {
-                font-size: 16px;
+                font-size: 1.6rem;
                 text-align: center;
             }
 
@@ -188,3 +198,8 @@ h1 {
     }
 }
 
+.profiles {
+    &__Mayte {
+        background-color: $color-secundario;
+    }
+}
