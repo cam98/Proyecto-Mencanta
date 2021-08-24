@@ -1,0 +1,30 @@
+$Fuente1: 'Poppins', sans-serif;
+$Fuente2: 'DM Serif Display', serif;
+$color-Mencanta: #F3C2C7;
+$color-secundario: #F2DDDF;
+$color-contraste: #BC9428;
+$color-gris: #585858;
+$color-oscuro: #29292E;
+$color-claro: #FFFFFF;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $Fuente1;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+    font-family: $Fuente2;
+}

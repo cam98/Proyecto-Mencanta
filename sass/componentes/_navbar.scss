@@ -1,0 +1,23 @@
+.navbar {
+    height: 70px;
+    width: 100vw;
+    position: relative;
+
+    &__burger-menu img {
+        height: 35px;
+        width: 35px;
+        margin: 15px;
+        position: absolute;
+    }
+
+    &__logo {
+        display: flex;
+        padding-top: 15px;
+        justify-content: center;
+
+         img {
+             width: 68px;
+             height: 48px;
+         }
+    }
+}

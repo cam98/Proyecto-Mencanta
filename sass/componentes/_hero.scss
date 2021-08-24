@@ -1,0 +1,40 @@
+.hero {
+    height: 60vh;
+    width: 100vw;
+    background-image: url("/images/banner/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: flex;
+        width: 90%;
+        height: 75%;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+        font-size: 3.0rem;
+        font-weight: 200;
+        text-align: center;
+        line-height: 3.2rem;
+        color: $color-claro;
+    }
+
+    &__button {
+        width: 230px;
+        margin: 10px auto;
+        padding: 10px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-claro;
+        background-color: $color-contraste;
+
+    }
+    
+}
