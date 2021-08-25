@@ -140,6 +140,7 @@ h1 {
   color: #29292E;
 }
 .services__container .service__container a p {
+  z-index: 5;
   width: 80%;
   position: absolute;
   bottom: 130%;
