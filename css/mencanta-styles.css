@@ -10,14 +10,14 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 300;
-  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Prata", serif;
 }
 
 .navbar {
@@ -50,17 +50,36 @@ h1 {
   height: 40vh;
   width: 100vw;
 }
-.hero__container {
+.hero__slider .slide {
+  height: 53vh;
+  margin: 0 auto;
   position: absolute;
   top: 0%;
-  background-image: url("../images/banner/banner1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.hero__slider .slide.one {
+  background-image: url("../images/banner/banner1.jpg");
+}
+.hero__slider .slide.two {
+  background-image: url("../images/banner/banner2.jpg");
+}
+.hero__slider .slide.three {
+  background-image: url("../images/banner/banner3.jpg");
+}
+.hero__slider .slide.four {
+  background-image: url("../images/banner/banner4.jpg");
+}
+.hero__slider .slide.five {
+  background-image: url("../images/banner/banner5.jpg");
+}
+.hero__slider .slide__info {
+  height: inherit;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -69,22 +88,19 @@ h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0 auto;
-}
-.hero__text {
-  width: 90%;
-  margin: 0 auto 10px auto;
-  font-size: 3rem;
-  font-weight: 200;
   text-align: center;
-  line-height: 3.2rem;
   color: #FFFFFF;
 }
-.hero__button {
-  width: 230px;
-  margin: 10px auto 30px auto;
-  padding: 10px;
+.hero__slider .slide__text {
+  font-size: 2.8rem;
+  font-weight: 200;
+  line-height: 3.2rem;
+}
+.hero__slider .slide__button {
+  width: 200px;
+  margin: 25px auto;
+  padding: 15px;
   font-weight: 600;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -98,6 +114,7 @@ h1 {
   color: #29292E;
 }
 .main-description__text p {
+  font-size: 1.6rem;
   padding-top: 15px;
 }
 .main-description__image {
@@ -112,7 +129,6 @@ h1 {
   margin: 0 auto;
 }
 .services__title {
-  font-size: 3.6rem;
   font-weight: 400;
   text-align: center;
 }
@@ -137,8 +153,8 @@ h1 {
 }
 .services__container .service__container a {
   position: relative;
-  font-family: "DM Serif Display", serif;
-  font-size: 3rem;
+  font-family: "Prata", serif;
+  font-size: 2.8rem;
   text-decoration: none;
   color: #29292E;
 }
