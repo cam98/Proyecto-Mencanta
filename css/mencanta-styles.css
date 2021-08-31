@@ -115,7 +115,6 @@ h1 {
   color: #29292E;
 }
 .main-description__text p {
-  font-size: 1.8rem;
   padding-top: 15px;
 }
 .main-description__image {
@@ -130,7 +129,6 @@ h1 {
   margin: 0 auto;
 }
 .services__title {
-  font-weight: 400;
   text-align: center;
 }
 .services__container {
@@ -142,12 +140,15 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 15px;
+  width: 325px;
+  min-width: 300px;
+  margin: 0 auto;
   padding-top: 25px;
   border-top: 2px solid #BC9428;
 }
 .services__container .service__container {
   height: 120px;
-  width: 325px;
+  width: inherit;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -155,22 +156,22 @@ h1 {
 .services__container .service__container a {
   position: relative;
   font-family: "Prata", serif;
-  font-size: 2.8rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #29292E;
 }
 .services__container .service__container a p {
   z-index: 5;
-  width: 80%;
+  width: 100%;
   position: absolute;
-  bottom: 130%;
-  right: 10%;
+  bottom: 170%;
   text-align: center;
   line-height: 3.5rem;
+  background-color: #BC9428;
 }
 .services__container .service__container a img {
-  height: 120px;
-  width: 325px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -208,6 +209,7 @@ h1 {
 }
 .services__quote-container p {
   font-size: 1.6rem;
+  font-style: italic;
   text-align: center;
 }
 
