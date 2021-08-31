@@ -15,9 +15,13 @@ body {
 }
 
 h1 {
-  letter-spacing: initial;
   font-size: 3rem;
   font-weight: 600;
+  font-family: "Prata", serif;
+}
+
+h2 {
+  font-size: 2.8rem;
   font-family: "Prata", serif;
 }
 
@@ -131,6 +135,9 @@ h1 {
 .services__title {
   text-align: center;
 }
+.services__line {
+  border-top: 2px solid #BC9428;
+}
 .services__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,7 +151,6 @@ h1 {
   min-width: 300px;
   margin: 0 auto;
   padding-top: 25px;
-  border-top: 2px solid #BC9428;
 }
 .services__container .service__container {
   height: 120px;
@@ -163,10 +169,10 @@ h1 {
 .services__container .service__container a p {
   z-index: 5;
   width: 100%;
+  padding: px;
   position: absolute;
   bottom: 170%;
   text-align: center;
-  line-height: 3.5rem;
   background-color: #BC9428;
 }
 .services__container .service__container a img {
@@ -218,9 +224,13 @@ h1 {
 }
 .profiles .mayte__container {
   width: 92%;
-  padding: 50px 0;
+  padding: 30px 0;
   margin: 0 auto;
 }
 .profiles .mayte__container p {
   line-height: 2rem;
+}
+.profiles__others {
+  width: 92%;
+  margin: 20px auto;
 }
