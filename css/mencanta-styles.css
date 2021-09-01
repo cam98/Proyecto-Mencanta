@@ -89,6 +89,7 @@ h2 {
      object-position: center;
 }
 .hero__slider .slide__info {
+  height: inherit;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,8 +101,11 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: absolute;
-  top: 30%;
+  top: 0%;
   text-align: center;
   color: #FFFFFF;
 }
@@ -154,8 +158,8 @@ h2 {
   margin-right: 10px;
 }
 .hero__slider .slider-navigation .nav-btn:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .main-description {
