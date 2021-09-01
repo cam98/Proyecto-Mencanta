@@ -3,47 +3,32 @@
     width: 100vw;
 
     &__slider {
-        .slide {
+        .slide { 
             height: 50vh;
             margin: 0 auto;
             position: absolute;
             top: 0%;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
 
-            &.one {
-                background-image: url("../images/banner/banner1.jpg");
-            }
-
-            &.two {
-                background-image: url("../images/banner/banner2.jpg");
-            }
-
-            &.three {
-                background-image: url("../images/banner/banner3.jpg");
-            }
-
-            &.four {
-                background-image: url("../images/banner/banner4.jpg");
-            }
-
-            &.five {
-                background-image: url("../images/banner/banner5.jpg");
+            img {
+                height: 50vh;
+                width: 100vw;
+                object-fit: cover;
+                object-position:top;
             }
 
             &__info {
-                height: inherit;
-                width: 90%;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-end;
-                margin: 0 auto;
+                align-items: center;
+                position: absolute;
+                top: 30%;
                 text-align: center;
                 color: $color-claro;
             }
         
             &__text {
+                width: 90%;
                 font-size: 2.8rem;
                 font-weight: 200;
                 line-height: 3.2rem;
