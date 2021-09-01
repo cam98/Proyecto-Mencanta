@@ -1,6 +1,14 @@
 .hero {
     height: 40vh;
     width: 100vw;
+  
+    &__background {
+      height: 50vh;
+      width: 100% ;
+      position: absolute;
+      top: 0%;
+      background-color: $color-Mencanta;
+    }
 
     &__slider {
         .slide { 
@@ -17,10 +25,10 @@
           }
 
             &__image {
-                height: 50vh;
+                height: inherit;
                 width: 100vw;
                 object-fit: cover;
-                object-position:top;
+                object-position:center;
             }
 
             &__info {
@@ -59,7 +67,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: translateY(238px);
+            transform: translateY(235px);
             margin-bottom: 15px;
           }
           

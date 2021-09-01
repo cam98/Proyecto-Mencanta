@@ -45,7 +45,7 @@ btns.forEach((btn, i) => {
       return;
     }
     repeater();
-  }, 5000);
+  }, 7000);
   }
   repeater();
 }
