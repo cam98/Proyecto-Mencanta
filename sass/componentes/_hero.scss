@@ -8,8 +8,15 @@
             margin: 0 auto;
             position: absolute;
             top: 0%;
+            clip-path: circle(0% at 0 50%);
+          
+          &.active{
+            clip-path: circle(150% at 0 50%);
+            transition: 2s;
+            transition-property: clip-path;
+          }
 
-            img {
+            &__image {
                 height: 50vh;
                 width: 100vw;
                 object-fit: cover;

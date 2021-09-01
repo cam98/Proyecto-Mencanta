@@ -60,8 +60,20 @@ h2 {
   margin: 0 auto;
   position: absolute;
   top: 0%;
+  -webkit-clip-path: circle(0% at 0 50%);
+          clip-path: circle(0% at 0 50%);
 }
-.hero__slider .slide img {
+.hero__slider .slide.active {
+  -webkit-clip-path: circle(150% at 0 50%);
+          clip-path: circle(150% at 0 50%);
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transition-property: -webkit-clip-path;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+}
+.hero__slider .slide__image {
   height: 50vh;
   width: 100vw;
   -o-object-fit: cover;
