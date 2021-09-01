@@ -123,6 +123,7 @@ h2 {
 }
 .hero__slider .slider-navigation {
   z-index: 888;
+  height: 40vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,12 +131,10 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateY(235px);
-          transform: translateY(235px);
-  margin-bottom: 15px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 15px;
 }
 .hero__slider .slider-navigation .nav-btn {
   width: 8px;

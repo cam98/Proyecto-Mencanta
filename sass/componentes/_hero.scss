@@ -63,12 +63,12 @@
         
         .slider-navigation{
             z-index: 888;
+            height: 40vh;
             position: relative;
             display: flex;
             justify-content: center;
-            align-items: center;
-            transform: translateY(235px);
-            margin-bottom: 15px;
+            align-items: flex-end;
+            padding-bottom: 15px;
           }
           
           .slider-navigation .nav-btn{
