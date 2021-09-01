@@ -51,7 +51,7 @@
 
             &__button {
                 width: 200px;
-                margin: 25px auto;
+                margin: 15px auto 35px auto;
                 padding: 15px;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -59,10 +59,39 @@
                 color: $color-claro;
                 background-color: $color-contraste;
             }
-        }
-
-       
+        }    
         
+        .slider-navigation{
+            z-index: 888;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(238px);
+            margin-bottom: 15px;
+          }
+          
+          .slider-navigation .nav-btn{
+            width: 8px;
+            height: 8px;
+            background: $color-claro;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+            transition: 0.3s ease;
+          }     
+          
+          .slider-navigation .nav-btn.active{
+            background: $color-contraste;
+          }
+          
+          .slider-navigation .nav-btn:not(:last-child){
+            margin-right: 10px;
+          }
+          
+          .slider-navigation .nav-btn:hover{
+            transform: scale(1.2);
+          }
     }
     
 }

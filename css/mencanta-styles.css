@@ -103,13 +103,50 @@ h2 {
 }
 .hero__slider .slide__button {
   width: 200px;
-  margin: 25px auto;
+  margin: 15px auto 35px auto;
   padding: 15px;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #BC9428;
+}
+.hero__slider .slider-navigation {
+  z-index: 888;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(238px);
+          transform: translateY(238px);
+  margin-bottom: 15px;
+}
+.hero__slider .slider-navigation .nav-btn {
+  width: 8px;
+  height: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.hero__slider .slider-navigation .nav-btn.active {
+  background: #BC9428;
+}
+.hero__slider .slider-navigation .nav-btn:not(:last-child) {
+  margin-right: 10px;
+}
+.hero__slider .slider-navigation .nav-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .main-description {
