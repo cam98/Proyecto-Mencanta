@@ -91,7 +91,7 @@ h2 {
 .hero__slider .slide__info {
   height: inherit;
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
