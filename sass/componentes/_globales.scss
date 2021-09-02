@@ -33,3 +33,50 @@ h2 {
     font-size: 2.8rem;
     font-family: $Fuente2;
 }
+
+.footer {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    grid-gap: 10px ;
+    justify-items: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    background-color: $color-Mencanta;
+
+    &__logo {
+        grid-column: 1 / span 2;
+        text-align: center;
+        img {
+            width: 80px;
+        }
+    }
+
+    &__services {
+        text-align: left;
+        a {
+            display: block;
+            text-decoration: none;
+            color: $color-oscuro;
+        }
+
+        h4 {
+            text-decoration: underline;
+        }
+    }
+ 
+    &__contact {
+        text-align: right;
+
+        a {
+            color: $color-oscuro;
+        }
+
+        &-icons {
+            padding-top: 15px;
+            svg {
+                font-size: 2.0rem;
+            }
+        }
+    }
+}

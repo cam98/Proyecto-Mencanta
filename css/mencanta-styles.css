@@ -25,6 +25,52 @@ h2 {
   font-family: "Prata", serif;
 }
 
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 10px auto;
+  -ms-grid-columns: 1fr 10px 1fr;
+      grid-template: auto auto/1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 15px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  background-color: #F3C2C7;
+}
+.footer__logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  text-align: center;
+}
+.footer__logo img {
+  width: 80px;
+}
+.footer__services {
+  text-align: left;
+}
+.footer__services a {
+  display: block;
+  text-decoration: none;
+  color: #29292E;
+}
+.footer__services h4 {
+  text-decoration: underline;
+}
+.footer__contact {
+  text-align: right;
+}
+.footer__contact a {
+  color: #29292E;
+}
+.footer__contact-icons {
+  padding-top: 15px;
+}
+.footer__contact-icons svg {
+  font-size: 2rem;
+}
+
 .navbar {
   z-index: 1;
   height: 70px;
