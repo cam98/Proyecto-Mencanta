@@ -1,6 +1,3 @@
-//Footer template 
-
-
 var slides = document.querySelectorAll('.slide');
 var btns = document.querySelectorAll('.nav-btn');
 let currentSlide = 1;

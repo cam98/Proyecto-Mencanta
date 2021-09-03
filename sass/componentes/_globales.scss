@@ -34,49 +34,51 @@ h2 {
     font-family: $Fuente2;
 }
 
-.footer {
-    display: grid;
-    grid-template: auto auto / 1fr 1fr;
-    grid-gap: 10px ;
-    justify-items: center;
-    padding: 15px;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    background-color: $color-Mencanta;
+// .footer {
+//     display: grid;
+//     grid-template: auto auto / 1fr 1fr;
+//     // grid-gap: 10px ;
+//     justify-items: center;
+//     padding: 20px;
+//     font-size: 1.2rem;
+//     line-height: 1.8rem;
+//     background-color: $color-Mencanta;
 
-    &__logo {
-        grid-column: 1 / span 2;
-        text-align: center;
-        img {
-            width: 80px;
-        }
-    }
+//     &__logo {
+//         grid-column: 1 / span 2;
+//         text-align: center;
+//         img {
+//             width: 100px;
+//         }
+//     }
 
-    &__services {
-        text-align: left;
-        a {
-            display: block;
-            text-decoration: none;
-            color: $color-oscuro;
-        }
+//     &__services {
+//         justify-self: left;
+//         text-align: left;
+//         a {
+//             display: block;
+//             text-decoration: none;
+//             color: $color-oscuro;
+//         }
 
-        h4 {
-            text-decoration: underline;
-        }
-    }
+//         h4 {
+//             text-decoration: underline;
+//         }
+//     }
  
-    &__contact {
-        text-align: right;
+//     &__contact {
+//         justify-self: right;
+//         text-align: right;
 
-        a {
-            color: $color-oscuro;
-        }
+//         a {
+//             color: $color-oscuro;
+//         }
 
-        &-icons {
-            padding-top: 15px;
-            svg {
-                font-size: 2.0rem;
-            }
-        }
-    }
-}
+//         &-icons {
+//             padding-top: 15px;
+//             svg {
+//                 font-size: 2.0rem;
+//             }
+//         }
+//     }
+// }
