@@ -285,3 +285,51 @@ h2 {
   width: 92%;
   margin: 20px auto;
 }
+
+.service {
+  width: 93%;
+  margin: 0 auto;
+}
+.service h1 {
+  font-weight: 400;
+  text-align: center;
+}
+.service-info p {
+  margin-top: 15px;
+}
+.service-info .bullet-text {
+  margin-left: 10px;
+}
+.service-info .bullet-text svg {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+.service-info__image {
+  width: inherit;
+  margin: 20px auto;
+  text-align: right;
+}
+.service-info__image img {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+.service-info__image .art-info {
+  display: block;
+  font-size: 10px;
+  color: #585858;
+}
+.service .button__container {
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+}
+.service .button__container a {
+  padding: 10px 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid #BC9428;
+  color: #BC9428;
+}

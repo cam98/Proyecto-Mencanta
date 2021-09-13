@@ -59,7 +59,7 @@ class Footer extends HTMLElement {
         <footer>
             <div class="footer">
                 <div class="footer__logo">
-                    <img src="images/main/logo-letras.png" alt="">
+                    <img src="../../images/main/logo-letras.png" alt="">
                     <!-- <p>© 2021 Mencanta All rights reserved.</p> -->
                 </div>
                 <div class="footer__services">
