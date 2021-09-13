@@ -1,0 +1,19 @@
+.service {
+  width: 93%;
+  margin: 0 auto;
+}
+.service h1 {
+  text-align: center;
+}
+.service-info__image {
+  width: 93%;
+  margin: 0 auto;
+}
+.service-info__image img {
+  height: 210px;
+  text-align: center;
+}
+.service-info__image .art-info {
+  display: block;
+  font-size: 10px;
+}

@@ -1,0 +1,58 @@
+.service {
+    width: 93%;
+    margin: 0 auto;
+
+    h1 {
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &-info {
+        p {
+            margin-top: 15px;
+        }
+        .bullet-text { 
+            margin-left: 10px;
+
+            svg {
+                margin-right: 5px;
+                font-size: 1.5rem;
+            }
+        }
+
+        &__image {
+            width: inherit;
+            margin: 20px auto;
+            text-align: right;
+    
+            img {
+                width: 100%;
+                max-width: 480px;
+                text-align: center;
+            }   
+    
+            .art-info {
+                display: block;
+                font-size: 10px;
+                color: $color-gris;  
+            }
+        }
+    }
+
+    .button__container {
+        width: 100%;
+        margin: 40px 0;
+        text-align: center;
+
+         a {
+             padding: 10px 30px;
+             font-size: 1.4rem;
+             font-weight: 600;
+             text-transform: uppercase;
+             text-decoration: none;
+             border: 3px solid $color-contraste;
+             color: $color-contraste;
+         }
+    }
+}
+
