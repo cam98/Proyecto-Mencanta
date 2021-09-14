@@ -32,7 +32,7 @@ class ServicesAgen extends HTMLElement {
             }
             .other-services__container .other img {
                 height: 200px;
-                width: 100%;
+                width: 80%;
                 max-width: 380px;
                 -o-object-fit: cover;
                 object-fit: cover;
@@ -58,7 +58,7 @@ class ServicesAgen extends HTMLElement {
         <section class="other-services">
             <div class="other-services__container">
                 <div class="other">
-                    <a href=""> 
+                    <a href="proyecto1.html"> 
                         <img src="../../images/agencia cultural/proyecto1.jpg" alt="">
                         <div class="other__text">
                             <p>Proyectos artísticos </p>

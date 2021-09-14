@@ -325,6 +325,11 @@ h2 {
   font-size: 10px;
   color: #585858;
 }
+.service .phrase {
+  margin: 20px;
+  text-align: center;
+  font-weight: 600;
+}
 .service .button__container {
   width: 100%;
   margin: 40px 0;
