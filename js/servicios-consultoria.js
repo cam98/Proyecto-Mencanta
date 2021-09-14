@@ -95,7 +95,7 @@ class ServicesCon extends HTMLElement {
                     </a> 
                 </div>
                 <div class="other">
-                    <a href="">
+                    <a href="gestion.html">
                         <img src="../../images/consultoria de arte/gestion.jpg" alt="">
                         <div class="other__text">
                             Gestión de colecciones
