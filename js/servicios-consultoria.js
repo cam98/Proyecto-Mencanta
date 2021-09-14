@@ -58,12 +58,12 @@ class ServicesCon extends HTMLElement {
                 line-height: 1.7rem;
             } 
         </style>
-        
+
         <section class="other-services">
             <h2>Nuestros Servicios</h2>
             <div class="other-services__container">
                 <div class="other">
-                    <a href=""> 
+                    <a href="asesoria.html"> 
                         <img src="../../images/consultoria de arte/asesoria.jpg" alt="">
                         <div class="other__text">
                             Asesoría en compraventa 
@@ -101,7 +101,7 @@ class ServicesCon extends HTMLElement {
                             Gestión de colecciones
                         </div>
                     </a> 
-                </div>
+                </div> 
                 <div class="other">
                     <a href="">
                         <img src="../../images/consultoria de arte/montaje.jpg" alt="">
