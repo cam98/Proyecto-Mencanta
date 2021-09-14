@@ -79,7 +79,7 @@ class ServicesCon extends HTMLElement {
                     </a>  
                 </div>
                 <div class="other">
-                    <a href="">
+                    <a href="tasacion.html">
                         <img src="../../images/consultoria de arte/tasacion.jpg" alt="">
                         <div class="other__text">
                             Tasación y peritaje de obras de arte

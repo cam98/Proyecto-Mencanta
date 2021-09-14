@@ -299,6 +299,10 @@ h2 {
 .service-info p {
   margin-top: 15px;
 }
+.service-info h2 {
+  margin-top: 20px;
+  font-size: 2.2rem;
+}
 .service-info .bullet-text {
   margin-left: 10px;
 }
