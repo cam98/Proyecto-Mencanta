@@ -66,7 +66,7 @@ class ServicesAgen extends HTMLElement {
                     </a>   
                 </div>
                 <div class="other">
-                    <a href="">
+                    <a href="proyecto2.html">
                         <img src="../../images/agencia cultural/proyecto2.jpg" alt="">
                         <div class="other__text">
                             <p> Proyecto <br><i>¡Que el Arte esté en todas partes!</i>
