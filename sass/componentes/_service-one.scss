@@ -56,3 +56,55 @@
     }
 }
 
+.other-services {
+    width: 93%;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 2.4rem;
+        margin: 20px auto;
+    }
+
+    &__container {
+        width: 100%;
+        display: grid;
+        margin-bottom: 50px;
+        grid-template: repeat(3, auto)
+        / repeat(2, 170px);
+        gap: 5px;
+        justify-items: center;
+        justify-content: center;
+        font-family: $Fuente2;
+
+        .other {
+            position: relative;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: $color-oscuro;
+            }
+
+            img {
+                height: 130px;
+                min-height: 110px;
+                width: 165px;
+                min-width: 150px;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            &__text {
+                width: 80%;
+                padding: 5px;
+                z-index: 999;
+                position: absolute;
+                bottom: 10%;
+                right: 10%;
+                background-color: $color-contraste;
+                line-height: 1.7rem;
+            }
+        }
+    }
+}
+

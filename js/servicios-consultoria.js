@@ -1,90 +1,119 @@
-class Footer extends HTMLElement {
+class ServicesCon extends HTMLElement {
     constructor() {
       super();
     }
     
     connectedCallback() {
         this.innerHTML = `
-        <style>
-            .footer {
+        <style>          
+            .other-services {
+                width: 93%;
+                margin: 0 auto;
+            }
+            .other-services h2 {
+                font-size: 2.4rem;
+                margin: 20px auto;
+            }
+            .other-services__container {
+                width: 100%;
                 display: -ms-grid;
                 display: grid;
-                -ms-grid-rows: auto auto;
-                -ms-grid-columns: 1fr 1fr;
-                    grid-template: auto auto/1fr 1fr;
+                margin-bottom: 50px;
+                -ms-grid-rows: auto 5px auto 5px auto;
+                -ms-grid-columns: 170px 5px 170px;
+                    grid-template: repeat(3, auto)/repeat(2, 170px);
+                gap: 5px;
                 justify-items: center;
-                padding: 20px;
-                font-size: 1.2rem;
-                line-height: 1.8rem;
-                background-color: #F3C2C7;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                font-family: "Prata", serif;
             }
-            .footer__logo {
-                -ms-grid-column: 1;
-                -ms-grid-column-span: 2;
-                grid-column: 1/span 2;
+            .other-services__container .other {
+                position: relative;
                 text-align: center;
             }
-            .footer__logo img {
-                width: 100px;
-            }
-            .footer__services {
-                -ms-grid-column-align: left;
-                    justify-self: left;
-                text-align: left;
-            }
-            .footer__services a {
-                display: block;
+            .other-services__container .other a {
                 text-decoration: none;
                 color: #29292E;
             }
-            .footer__services h4 {
-                text-decoration: underline;
+            .other-services__container .other img {
+                height: 130px;
+                min-height: 110px;
+                width: 165px;
+                min-width: 150px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -o-object-position: top;
+                object-position: top;
             }
-            .footer__contact {
-                -ms-grid-column-align: right;
-                    justify-self: right;
-                text-align: right;
-            }
-            .footer__contact a {
-                color: #29292E;
-            }
-            .footer__contact-icons {
-                padding-top: 15px;
-            }
-            .footer__contact-icons svg {
-                font-size: 2rem;
-            }
+            .other-services__container .other__text {
+                width: 80%;
+                padding: 5px;
+                z-index: 999;
+                position: absolute;
+                bottom: 10%;
+                right: 10%;
+                background-color: #BC9428;
+                line-height: 1.7rem;
+            } 
         </style>
-        <footer>
-            <div class="footer">
-                <div class="footer__logo">
-                    <img src="images/main/logo-letras.png" alt="">
-                    <!-- <p>© 2021 Mencanta All rights reserved.</p> -->
+        
+        <section class="other-services">
+            <h2>Nuestros Servicios</h2>
+            <div class="other-services__container">
+                <div class="other">
+                    <a href=""> 
+                        <img src="../../images/consultoria de arte/asesoria.jpg" alt="">
+                        <div class="other__text">
+                            Asesoría en compraventa 
+                        </div>
+                    </a>   
                 </div>
-                <div class="footer__services">
-                    <h4><a href="">SERVICIOS</a></h4>
-                    <a href="">Consultoria de arte</a>
-                    <a href="">Representación de Artistas</a>
-                    <a href="">Galería</a>
-                    <a href="">Agencia Cultural</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Regala Arte</a>
+                <div class="other">
+                    <a href="">
+                        <img src="../../images/consultoria de arte/inventariado.jpg" alt="">
+                        <div class="other__text">
+                            Inventariado y catalogación 
+                        </div>
+                    </a>  
                 </div>
-                <div class="footer__contact">
-                    <h4><a href="">CONTÁCTANOS</a></h4>
-                    <p>Mencanta Consultora de Arte</p>
-                    <p>Bogotá, Colombia</p>
-                    <p>318 225 1477</p>
-                    <div class="footer__contact-icons">
-                        <a href=""><span class="iconify" data-icon="bx:bxl-facebook" style="color: #bc9428;"></span></a>
-                        <a href=""><span class="iconify" data-icon="akar-icons:instagram-fill" style="color: #bc9428;"></span></a>
-                        <a href=""><span class="iconify" data-icon="akar-icons:linkedin-fill" style="color: #bc9428;"></span></a>
-                    </div>
+                <div class="other">
+                    <a href="">
+                        <img src="../../images/consultoria de arte/tasacion.jpg" alt="">
+                        <div class="other__text">
+                            Tasación y peritaje de obras de arte
+                        </div>
+                    </a>    
+                </div>
+                <div class="other">
+                    <a href="">
+                        <img src="../../images/consultoria de arte/asesoramiento.jpg" alt="">
+                        <div class="other__text">
+                            Asesoramiento legal y fiscal
+                        </div>
+                    </a> 
+                </div>
+                <div class="other">
+                    <a href="">
+                        <img src="../../images/consultoria de arte/gestion.jpg" alt="">
+                        <div class="other__text">
+                            Gestión de colecciones
+                        </div>
+                    </a> 
+                </div>
+                <div class="other">
+                    <a href="">
+                        <img src="../../images/consultoria de arte/montaje.jpg" alt="">
+                        <div class="other__text">
+                            Montaje, iluminación, embalaje
+                        </div>
+                    </a>  
                 </div>
             </div>
-        </footer>
+        </section>
         `;
       }
     }
 
-customElements.define('my-footer', Footer);
+customElements.define('servicios-consultoria', ServicesCon);

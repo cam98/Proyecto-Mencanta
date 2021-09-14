@@ -56,6 +56,7 @@ class Footer extends HTMLElement {
                 font-size: 2rem;
             }
         </style>
+        
         <footer>
             <div class="footer">
                 <div class="footer__logo">
