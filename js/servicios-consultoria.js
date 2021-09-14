@@ -71,7 +71,7 @@ class ServicesCon extends HTMLElement {
                     </a>   
                 </div>
                 <div class="other">
-                    <a href="">
+                    <a href="inventariado.html">
                         <img src="../../images/consultoria de arte/inventariado.jpg" alt="">
                         <div class="other__text">
                             Inventariado y catalogación 
