@@ -31,6 +31,7 @@ h2 {
   height: 70px;
   width: 100vw;
   position: relative;
+  background-color: #F3C2C7;
 }
 .navbar__burger-menu img {
   height: 35px;
@@ -42,12 +43,38 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 15px;
+  padding: 7px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .navbar__logo img {
+  width: 78px;
+  height: 58px;
+}
+
+.navbar1 {
+  z-index: 1;
+  height: 70px;
+  width: 100vw;
+  position: relative;
+}
+.navbar1__burger-menu img {
+  height: 35px;
+  width: 35px;
+  margin: 15px;
+  position: absolute;
+}
+.navbar1__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navbar1__logo img {
   width: 78px;
   height: 58px;
 }
@@ -289,7 +316,7 @@ h2 {
 
 .service {
   width: 93%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .service h1 {
   font-weight: 400;

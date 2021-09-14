@@ -3,6 +3,34 @@
     height: 70px;
     width: 100vw;
     position: relative;
+    background-color: $color-Mencanta;
+
+    &__burger-menu img {
+        height: 35px;
+        width: 35px;
+        margin: 15px;
+        position: absolute;
+    }
+
+    &__logo {
+        display: flex;
+        padding: 7px 0;
+        justify-content: center;
+
+         img {
+             width: 78px;
+             height: 58px;
+         }
+    }
+}
+
+//Navbar sin fondo 
+
+.navbar1 {
+    z-index: 1;
+    height: 70px;
+    width: 100vw;
+    position: relative;
 
     &__burger-menu img {
         height: 35px;
