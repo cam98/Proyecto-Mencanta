@@ -103,7 +103,7 @@ class ServicesCon extends HTMLElement {
                     </a> 
                 </div> 
                 <div class="other">
-                    <a href="">
+                    <a href="montaje.html">
                         <img src="../../images/consultoria de arte/montaje.jpg" alt="">
                         <div class="other__text">
                             Montaje, iluminación, embalaje
