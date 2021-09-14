@@ -87,7 +87,7 @@ class ServicesCon extends HTMLElement {
                     </a>    
                 </div>
                 <div class="other">
-                    <a href="">
+                    <a href="asesoramiento.html">
                         <img src="../../images/consultoria de arte/asesoramiento.jpg" alt="">
                         <div class="other__text">
                             Asesoramiento legal y fiscal
