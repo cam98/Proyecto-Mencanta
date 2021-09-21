@@ -32,14 +32,21 @@
                 text-decoration: none;
                 color: $color-oscuro;
 
-                p {
-                    z-index: 5;
+                .service__name {
+                    z-index: 100;
                     width: 100%;
-                    padding: px;
+                    margin: 0 auto;
                     position: absolute;
-                    bottom: 170%;
-                    text-align: center;
-                    background-color: $color-contraste;
+                    bottom: 10%;
+
+                    p {
+                        max-width: 180px;
+                        padding: 10px;
+                        margin: 0 auto;
+                        text-align: center;
+                        background-color: $color-contraste;
+                        line-height: 2.2rem;
+                    }
                 }
 
                 img {
