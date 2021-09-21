@@ -1,4 +1,4 @@
-class Publicaciones extends HTMLElement {
+class ServicesPubli extends HTMLElement {
     constructor() {
       super();
     }
@@ -58,7 +58,7 @@ class Publicaciones extends HTMLElement {
         <section class="other-services">
             <div class="other-services__container">
                 <div class="other">
-                    <a href="proyecto1.html"> 
+                    <a href="podcast.html"> 
                         <img src="../../images/publicaciones/podcast.jpg" alt="">
                         <div class="other__text">
                             <p>Podcast </p>
@@ -66,7 +66,7 @@ class Publicaciones extends HTMLElement {
                     </a>   
                 </div>
                 <div class="other">
-                    <a href="proyecto2.html">
+                    <a href="blog.html">
                         <img src="../../images/publicaciones/blog.jpg" alt="">
                         <div class="other__text">
                             <p>Blog</p>
@@ -79,4 +79,4 @@ class Publicaciones extends HTMLElement {
       }
     }
 
-customElements.define('publicaciones', Publicaciones);
+customElements.define('servicios-publi', ServicesPubli);
