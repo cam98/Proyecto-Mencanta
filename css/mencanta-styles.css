@@ -155,7 +155,6 @@ h2 {
   background-color: #BC9428;
 }
 .hero__slider .slider-navigation {
-  z-index: 888;
   height: 40vh;
   position: relative;
   display: -webkit-box;
