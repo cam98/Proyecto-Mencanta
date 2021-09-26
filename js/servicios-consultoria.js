@@ -21,7 +21,7 @@ class ServicesCon extends HTMLElement {
                 margin-bottom: 50px;
                 -ms-grid-rows: auto 5px auto 5px auto;
                 -ms-grid-columns: 170px 5px 170px;
-                    grid-template: repeat(3, auto)/repeat(2, 170px);
+                    grid-template: repeat(3, auto)/repeat(2, auto);
                 gap: 5px;
                 justify-items: center;
                 -webkit-box-pack: center;
@@ -34,14 +34,13 @@ class ServicesCon extends HTMLElement {
                 text-align: center;
             }
             .other-services__container .other a {
+                display: flex;
                 text-decoration: none;
                 color: #29292E;
             }
             .other-services__container .other img {
                 height: 130px;
-                min-height: 110px;
                 width: 165px;
-                min-width: 150px;
                 -o-object-fit: cover;
                 object-fit: cover;
                 -o-object-position: top;

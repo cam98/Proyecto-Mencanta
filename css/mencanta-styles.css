@@ -26,59 +26,6 @@ h2 {
   font-family: "Prata", serif;
 }
 
-.navbar {
-  z-index: 1;
-  height: 70px;
-  width: 100vw;
-  position: relative;
-  background-color: #F3C2C7;
-}
-.navbar__burger-menu img {
-  height: 35px;
-  width: 35px;
-  margin: 15px;
-  position: absolute;
-}
-.navbar__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 7px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.navbar__logo img {
-  width: 78px;
-  height: 58px;
-}
-
-.navbar1 {
-  z-index: 1;
-  height: 70px;
-  width: 100vw;
-  position: relative;
-}
-.navbar1__burger-menu img {
-  height: 35px;
-  width: 35px;
-  margin: 15px;
-  position: absolute;
-}
-.navbar1__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.navbar1__logo img {
-  width: 78px;
-  height: 58px;
-}
-
 .hero {
   height: 40vh;
   width: 100vw;
@@ -225,8 +172,8 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 15px;
-  width: 325px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 325px;
   margin: 0 auto;
   padding-top: 25px;
 }
