@@ -1,52 +1,54 @@
-.navbar {
-    z-index: 1;
-    height: 70px;
-    width: 100vw;
-    position: relative;
-    background-color: $color-Mencanta;
 
-    &__burger-menu img {
-        height: 35px;
-        width: 35px;
-        margin: 15px;
-        position: absolute;
-    }
 
-    &__logo {
-        display: flex;
-        padding: 7px 0;
-        justify-content: center;
+// .navbar {
+//     z-index: 1;
+//     height: 70px;
+//     width: 100vw;
+//     position: relative;
+//     background-color: $color-Mencanta;
 
-         img {
-             width: 78px;
-             height: 58px;
-         }
-    }
-}
+//     &__burger-menu img {
+//         height: 35px;
+//         width: 35px;
+//         margin: 15px;
+//         position: absolute;
+//     }
 
-//Navbar sin fondo 
+//     &__logo {
+//         display: flex;
+//         padding: 7px 0;
+//         justify-content: center;
 
-.navbar1 {
-    z-index: 1;
-    height: 70px;
-    width: 100vw;
-    position: relative;
+//          img {
+//              width: 78px;
+//              height: 58px;
+//          }
+//     }
+// }
 
-    &__burger-menu img {
-        height: 35px;
-        width: 35px;
-        margin: 15px;
-        position: absolute;
-    }
+// //Navbar sin fondo 
 
-    &__logo {
-        display: flex;
-        padding-top: 15px;
-        justify-content: center;
+// .navbar1 {
+//     z-index: 1;
+//     height: 70px;
+//     width: 100vw;
+//     position: relative;
 
-         img {
-             width: 78px;
-             height: 58px;
-         }
-    }
-}
+//     &__burger-menu img {
+//         height: 35px;
+//         width: 35px;
+//         margin: 15px;
+//         position: absolute;
+//     }
+
+//     &__logo {
+//         display: flex;
+//         padding-top: 15px;
+//         justify-content: center;
+
+//          img {
+//              width: 78px;
+//              height: 58px;
+//          }
+//     }
+// }
