@@ -65,12 +65,12 @@ class Footer extends HTMLElement {
                 </div>
                 <div class="footer__services">
                     <h4><a href="">SERVICIOS</a></h4>
-                    <a href="">Consultoria de arte</a>
+                    <a href="/html/Consultoria de Arte/consultoria.html">Consultoria de arte</a>
                     <a href="">Representación de Artistas</a>
                     <a href="">Galería</a>
-                    <a href="">Agencia Cultural</a>
-                    <a href="">Publicaciones</a>
-                    <a href="">Regala Arte</a>
+                    <a href="/html/Agencia Cultural/agencia.html">Agencia Cultural</a>
+                    <a href="/html/Publicaciones/publicaciones.html">Publicaciones</a>
+                    <a href="/html/Regala arte/regala.html">Regala Arte</a>
                 </div>
                 <div class="footer__contact">
                     <h4><a href="">CONTÁCTANOS</a></h4>
