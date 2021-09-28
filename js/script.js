@@ -1,3 +1,15 @@
+// Javascript del menu 
+
+addEventListener('DOMContentLoaded', () => {
+  const navbar__btn = document.querySelector('.navbar__btn')
+  if (navbar__btn) {
+    navbar__btn.addEventListener('click', () => {
+      const navbar__services = document.querySelector('.navbar__services')
+      navbar__services.classList.toggle('show')
+    })
+  }
+})
+
 var slides = document.querySelectorAll('.slide');
 var btns = document.querySelectorAll('.nav-btn');
 let currentSlide = 1;
@@ -50,3 +62,4 @@ btns.forEach((btn, i) => {
   repeater();
 }
 repeat();
+

@@ -6,57 +6,9 @@ class Footer extends HTMLElement {
     
     connectedCallback() {
         this.innerHTML = `
-        <style>
-            .footer {
-                display: -ms-grid;
-                display: grid;
-                -ms-grid-rows: auto auto;
-                -ms-grid-columns: 1fr 1fr;
-                    grid-template: auto auto/1fr 1fr;
-                justify-items: center;
-                padding: 20px;
-                font-size: 1.2rem;
-                line-height: 1.8rem;
-                background-color: #F3C2C7;
-            }
-            .footer__logo {
-                -ms-grid-column: 1;
-                -ms-grid-column-span: 2;
-                grid-column: 1/span 2;
-                text-align: center;
-            }
-            .footer__logo img {
-                width: 100px;
-            }
-            .footer__services {
-                -ms-grid-column-align: left;
-                    justify-self: left;
-                text-align: left;
-            }
-            .footer__services a {
-                display: block;
-                text-decoration: none;
-                color: #29292E;
-            }
-            .footer__services h4 {
-                text-decoration: underline;
-            }
-            .footer__contact {
-                -ms-grid-column-align: right;
-                    justify-self: right;
-                text-align: right;
-            }
-            .footer__contact a {
-                color: #29292E;
-            }
-            .footer__contact-icons {
-                padding-top: 15px;
-            }
-            .footer__contact-icons svg {
-                font-size: 2rem;
-            }
-        </style>
-        
+        <head>
+        <link rel="stylesheet" href="/css/mencanta-styles.css">
+        </head>
         <footer>
             <div class="footer">
                 <div class="footer__logo">

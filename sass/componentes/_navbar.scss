@@ -1,54 +1,78 @@
+.navbar {
+    z-index: 999;
+    height: 70px;
+    width: 100vw;
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-Mencanta;
 
+    &__btn {
+        position: absolute;
+        display: block;
+        font-size: 3rem;
+        left: 4%;
+        cursor: pointer;
+    }
 
-// .navbar {
-//     z-index: 1;
-//     height: 70px;
-//     width: 100vw;
-//     position: relative;
-//     background-color: $color-Mencanta;
+    
 
-//     &__burger-menu img {
-//         height: 35px;
-//         width: 35px;
-//         margin: 15px;
-//         position: absolute;
-//     }
+    &__logo {
+        img {
+            width: 78px;
+            height: 58px;
+        }
+    }
 
-//     &__logo {
-//         display: flex;
-//         padding: 7px 0;
-//         justify-content: center;
+    #check {
+        display: none;
+    }
 
-//          img {
-//              width: 78px;
-//              height: 58px;
-//          }
-//     }
-// }
+    #check:checked ~ .navbar__services {
+        height: 100vh;
+    }
 
-// //Navbar sin fondo 
+    #check:checked ~ .navbar__services ul {
+        display: flex;
+    }
 
-// .navbar1 {
-//     z-index: 1;
-//     height: 70px;
-//     width: 100vw;
-//     position: relative;
+    &__services {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 70px;
+        background-color: $color-secundario;
+        text-align: center;
+        font-size: 1.6rem;
+        transition: all .4s;
+        
+        ul {
+            display: none;
+            padding: 40px;
+            gap: 40px;
+            flex-direction: column;
+            list-style: none;
 
-//     &__burger-menu img {
-//         height: 35px;
-//         width: 35px;
-//         margin: 15px;
-//         position: absolute;
-//     }
+            li {
+                a {
+                    color: $color-oscuro;
+                    text-decoration: none;
 
-//     &__logo {
-//         display: flex;
-//         padding-top: 15px;
-//         justify-content: center;
+                    &.active {
+                        text-decoration: underline;
+                        transition: 0.5s;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        transition: 0.5s;
+                    }
+                }
+            }
+           
 
-//          img {
-//              width: 78px;
-//              height: 58px;
-//          }
-//     }
-// }
+        }
+    }
+}

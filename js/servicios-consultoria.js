@@ -5,59 +5,9 @@ class ServicesCon extends HTMLElement {
     
     connectedCallback() {
         this.innerHTML = `
-        <style>          
-            .other-services {
-                width: 93%;
-                margin: 0 auto;
-            }
-            .other-services h2 {
-                font-size: 2.4rem;
-                margin: 20px auto;
-            }
-            .other-services__container {
-                width: 100%;
-                display: -ms-grid;
-                display: grid;
-                margin-bottom: 50px;
-                -ms-grid-rows: auto 5px auto 5px auto;
-                -ms-grid-columns: 170px 5px 170px;
-                    grid-template: repeat(3, auto)/repeat(2, auto);
-                gap: 5px;
-                justify-items: center;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                font-family: "Prata", serif;
-            }
-            .other-services__container .other {
-                position: relative;
-                text-align: center;
-            }
-            .other-services__container .other a {
-                display: flex;
-                text-decoration: none;
-                color: #29292E;
-            }
-            .other-services__container .other img {
-                height: 130px;
-                width: 165px;
-                -o-object-fit: cover;
-                object-fit: cover;
-                -o-object-position: top;
-                object-position: top;
-            }
-            .other-services__container .other__text {
-                width: 80%;
-                padding: 5px;
-                z-index: 999;
-                position: absolute;
-                bottom: 10%;
-                right: 10%;
-                background-color: #BC9428;
-                line-height: 1.7rem;
-            } 
-        </style>
-
+        <head>
+         <link rel="stylesheet" href="/css/mencanta-styles.css">
+        </head>
         <section class="other-services">
             <h2>Nuestros Servicios</h2>
             <div class="other-services__container">
@@ -65,7 +15,7 @@ class ServicesCon extends HTMLElement {
                     <a href="asesoria.html"> 
                         <img src="../../images/consultoria de arte/asesoria.jpg" alt="">
                         <div class="other__text">
-                            Asesoría en compraventa 
+                            <p>Asesoría en compraventa</p> 
                         </div>
                     </a>   
                 </div>
@@ -73,7 +23,7 @@ class ServicesCon extends HTMLElement {
                     <a href="inventariado.html">
                         <img src="../../images/consultoria de arte/inventariado.jpg" alt="">
                         <div class="other__text">
-                            Inventariado y catalogación 
+                            <p>Inventariado y catalogación</p>
                         </div>
                     </a>  
                 </div>
@@ -81,7 +31,7 @@ class ServicesCon extends HTMLElement {
                     <a href="tasacion.html">
                         <img src="../../images/consultoria de arte/tasacion.jpg" alt="">
                         <div class="other__text">
-                            Tasación y peritaje de obras de arte
+                            <p>Tasación y peritaje de obras de arte</p>
                         </div>
                     </a>    
                 </div>
@@ -89,7 +39,7 @@ class ServicesCon extends HTMLElement {
                     <a href="asesoramiento.html">
                         <img src="../../images/consultoria de arte/asesoramiento.jpg" alt="">
                         <div class="other__text">
-                            Asesoramiento legal y fiscal
+                            <p>Asesoramiento legal y fiscal</p>
                         </div>
                     </a> 
                 </div>
@@ -97,7 +47,7 @@ class ServicesCon extends HTMLElement {
                     <a href="gestion.html">
                         <img src="../../images/consultoria de arte/gestion.jpg" alt="">
                         <div class="other__text">
-                            Gestión de colecciones
+                            <p>Gestión de colecciones</p>
                         </div>
                     </a> 
                 </div> 
@@ -105,7 +55,7 @@ class ServicesCon extends HTMLElement {
                     <a href="montaje.html">
                         <img src="../../images/consultoria de arte/montaje.jpg" alt="">
                         <div class="other__text">
-                            Montaje, iluminación, embalaje
+                            <p>Montaje, iluminación, embalaje</p>
                         </div>
                     </a>  
                 </div>
