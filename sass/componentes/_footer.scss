@@ -1,11 +1,19 @@
 .footer {
     display: grid;
     grid-template: auto auto/1fr 1fr;
+    row-gap: 20px;
     justify-items: center;
     padding: 20px;
     font-size: 1.2rem;
     line-height: 1.8rem;
     background-color: $color-Mencanta;
+
+    @include media(tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 
     &__logo {
         grid-column: 1/span 2;
@@ -13,12 +21,21 @@
 
         img {
             width: 100px;
+
+            @include media(tablet) {
+                width: 110px;
+            }
+            
         }
     }
 
     &__services {
         justify-self: left;
         text-align: left;
+
+        @include media(tablet) {
+            text-align: center;
+        }
 
         a {
             display: block;

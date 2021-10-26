@@ -9,7 +9,7 @@ class ServicesCon extends HTMLElement {
          <link rel="stylesheet" href="/css/mencanta-styles.css">
         </head>
         <section class="other-services">
-            <h2>Nuestros Servicios</h2>
+            <h3>Nuestros Servicios</h3>
             <div class="other-services__container">
                 <div class="other">
                     <a href="asesoria.html"> 

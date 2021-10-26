@@ -2,6 +2,10 @@
     width: 93%;
     margin: 30px auto;
 
+    @include media(desktop-s) {
+        width: 80%;
+    }
+
     h1 {
         font-weight: 400;
         line-height: 3.5rem;
@@ -10,7 +14,11 @@
 
     &-info {
         p {
-            margin-top: 15px;
+            margin-bottom: 15px;
+
+            &.top {
+                margin-top: 15px;
+            }
         }
 
         h2 {
@@ -27,20 +35,49 @@
             }
         }
 
+        @include media(desktop-s) {
+            display: flex;
+            margin: 30px 0;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            gap: 15px;
+    }
+
         &__image {
-            width: inherit;
+            width: 100%;
+            min-width: 300px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
             margin: 20px auto;
             text-align: right;
+
+            @include media(desktop-s) {
+                margin: 0 auto;
+        }
+
+            &.vertical {
+                min-width: 250px;
+                max-width: 300px;
+            }
     
             img {
                 width: 100%;
-                max-width: 350px;
+                max-width: inherit;
                 text-align: center;
+
+                &.vertical {
+                    max-width: 300px;
+                }
             }   
     
             .art-info {
+                width: 90%;
+                margin-top: 8px;
                 display: block;
-                font-size: 10px;
+                font-size: 1rem;
+                line-height: 1.5rem;
                 color: $color-gris;  
             }
         }

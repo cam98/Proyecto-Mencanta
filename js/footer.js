@@ -13,13 +13,13 @@ class Footer extends HTMLElement {
             <div class="footer">
                 <div class="footer__logo">
                     <img src="/images/main/logo-letras.png" alt="">
-                    <!-- <p>© 2021 Mencanta All rights reserved.</p> -->
+                    <p class="rights">© 2021 Mencanta All rights reserved.</p>
                 </div>
                 <div class="footer__services">
                     <h4><a href="">SERVICIOS</a></h4>
                     <a href="/html/Consultoria de Arte/consultoria.html">Consultoria de arte</a>
                     <a href="">Representación de Artistas</a>
-                    <a href="">Galería</a>
+                    <a href="/html/Galeria/galeria.html">Galería</a>
                     <a href="/html/Agencia Cultural/agencia.html">Agencia Cultural</a>
                     <a href="/html/Publicaciones/publicaciones.html">Publicaciones</a>
                     <a href="/html/Regala arte/regala.html">Regala Arte</a>
