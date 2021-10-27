@@ -6,7 +6,7 @@
         width: 80%;
     }
 
-    .gallery-container {
+    &__container {
         padding-top: 20px;
         display: grid;
         grid-template-columns: repeat(auto-fill, 250px);
@@ -22,7 +22,7 @@
         }
     }
 
-    .gallery-card {
+    &__card {
         width: 95%;
         display: flex;
         flex-direction: column;
@@ -45,7 +45,7 @@
             }
         }
 
-        &--info {
+        &-info {
             display: flex;
             flex-direction: column;
             margin-top: 16px;
@@ -58,16 +58,16 @@
                 font-size: 1.4rem;
             }
 
-            a, span{
+            .modal-open, span{
                 margin-top: 25px;
-                padding: 10px 45px;
+                padding: 15px 45px;
                 color: $color-claro;
                 font-size: 14px;
-                font-weight: 600;
+                font-weight: 400;
                 background-color: $color-contraste;
-                text-align: center;
+                border: none;
+                outline: none;
                 text-transform: uppercase;
-                text-decoration: none;
             }
         }
     }
@@ -97,3 +97,99 @@
     }
 
 }
+
+.modals {
+    .modal {
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0,0,0,.6);
+        visibility: hidden;
+        animation: modal-open .5s;
+
+        &__container {
+            width: 85%;
+            overflow: visible;
+            padding: 20px;
+            background-color: $color-claro;
+            box-shadow: 4px 4px 5px rgb(0 0 0 / 60%);
+
+            .icon {
+                position: relative;
+                left: 95%;
+               font-size: 1.8rem;
+               line-height: 1.8rem;
+               border: none;
+               outline:none;
+               background: none;
+            }
+
+            .modal__content {
+               display: flex; 
+               flex-direction: column;
+
+               &--img {
+                   width: auto;
+                   text-align: center;
+
+                   img {
+                    width: 80%;
+                   }
+               }
+
+               &--info {
+                   padding-left: 20px;
+
+                   p {
+                       font-size: 1.4rem;
+                   }
+
+                   p:nth-child(4) {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    margin-top: 15px ;
+                   }
+
+                   h2 {
+                       margin: 5px 0;
+                   }
+
+                   .modal-button {
+                       width: 170px;
+                       margin: 10px auto;
+                       padding: 10px;
+                       background-color:#25D366; 
+
+                       a {
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            font-weight: 600;
+                            text-decoration: none;
+                            color: $color-claro;    
+                       }
+                    }
+               }
+            }
+        }
+    }
+    @keyframes modal-open{
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+}
+
+
+
+
+

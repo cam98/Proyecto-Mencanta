@@ -98,6 +98,8 @@
                     opacity: 0.5;
                 }
 
+                
+
                 .six {
                     object-fit: cover;
                     object-position: top;
@@ -105,6 +107,12 @@
             }
         }
         
+        .service__container:hover {
+            img {
+                transition: .3s ease all;
+                opacity: 1;
+            }
+        }
     }
 
     &__quote {
