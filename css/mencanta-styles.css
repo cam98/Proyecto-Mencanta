@@ -43,6 +43,10 @@ a {
   cursor: pointer;
 }
 
+button {
+  font-family: "Raleway", sans-serif;
+}
+
 h1 {
   display: -ms-grid;
   display: grid;
@@ -966,7 +970,7 @@ h3:after {
   padding: 15px 45px;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   background-color: #BC9428;
   border: none;
   outline: none;
@@ -990,6 +994,7 @@ h3:after {
   font-family: "Prata", serif;
 }
 .gallery .main-gallery a span {
+  text-align: center;
   margin-top: 0;
   font-size: 1.8rem;
   text-transform: none;
@@ -1018,22 +1023,56 @@ h3:after {
 }
 .modals .modal__container {
   width: 85%;
+  max-width: 950px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: visible;
   padding: 20px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
           box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
 }
+.modals .modal__container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.modals .modal__container > *:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+@media only screen and (min-width: 992px) {
+  .modals .modal__container {
+    height: 590px;
+  }
+}
 .modals .modal__container .icon {
-  position: relative;
-  left: 95%;
+  -ms-grid-column-align: end;
+      justify-self: end;
   font-size: 1.8rem;
   line-height: 1.8rem;
   border: none;
   outline: none;
   background: none;
 }
+@media only screen and (min-width: 992px) {
+  .modals .modal__container .icon {
+    font-size: 2.5rem;
+  }
+}
 .modals .modal__container .modal__content {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,33 +1080,78 @@ h3:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+@media only screen and (min-width: 645px) {
+  .modals .modal__container .modal__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .modals .modal__container .modal__content--img {
-  width: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
 }
 .modals .modal__container .modal__content--img img {
-  width: 80%;
+  width: 70%;
+  max-height: 550px;
 }
 .modals .modal__container .modal__content--info {
   padding-left: 20px;
 }
+@media only screen and (min-width: 645px) {
+  .modals .modal__container .modal__content--info {
+    padding-left: 0;
+  }
+}
 .modals .modal__container .modal__content--info p {
   font-size: 1.4rem;
+}
+@media only screen and (min-width: 645px) {
+  .modals .modal__container .modal__content--info p {
+    font-size: 1.6rem;
+  }
 }
 .modals .modal__container .modal__content--info p:nth-child(4) {
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: 15px;
 }
+@media only screen and (min-width: 645px) {
+  .modals .modal__container .modal__content--info p:nth-child(4) {
+    font-size: 1.8rem;
+  }
+}
 .modals .modal__container .modal__content--info h2 {
   margin: 5px 0;
 }
+@media only screen and (min-width: 992px) {
+  .modals .modal__container .modal__content--info h2 {
+    margin-bottom: 20px;
+  }
+}
 .modals .modal__container .modal__content--info .modal-button {
   width: 170px;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 10px;
-  background-color: #25D366;
+  background-color: #BC9428;
+}
+@media only screen and (min-width: 645px) {
+  .modals .modal__container .modal__content--info .modal-button {
+    width: 230px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .modals .modal__container .modal__content--info .modal-button {
+    width: 270px;
+  }
 }
 .modals .modal__container .modal__content--info .modal-button a {
   display: -webkit-box;
@@ -1079,9 +1163,22 @@ h3:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: #FFFFFF;
+}
+@media only screen and (min-width: 992px) {
+  .modals .modal__container .modal__content--info .modal-button a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modals .modal__container .modal__content--info .modal-button a span {
+    margin-left: 10px;
+  }
+}
+.modals .modal__container .modal__content--info .modal-button a .iconify {
+  font-size: 2rem;
 }
 @-webkit-keyframes modal-open {
   from {

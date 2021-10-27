@@ -63,7 +63,7 @@
                 padding: 15px 45px;
                 color: $color-claro;
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 600;
                 background-color: $color-contraste;
                 border: none;
                 outline: none;
@@ -88,6 +88,7 @@
             font-family: $Fuente2;
 
             span {
+                text-align: center;
                 margin-top: 0;
                 font-size: 1.8rem;
                 text-transform: none;
@@ -114,64 +115,121 @@
 
         &__container {
             width: 85%;
+            max-width: 950px;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
             overflow: visible;
             padding: 20px;
             background-color: $color-claro;
             box-shadow: 4px 4px 5px rgb(0 0 0 / 60%);
 
+            @include media(desktop-s) {
+                height: 590px;
+            }
+
             .icon {
-                position: relative;
-                left: 95%;
+                justify-self: end;
                font-size: 1.8rem;
                line-height: 1.8rem;
                border: none;
                outline:none;
                background: none;
+
+               @include media(desktop-s) {
+                   font-size: 2.5rem;
+               }
             }
 
             .modal__content {
+                grid-row: 2/3;
                display: flex; 
                flex-direction: column;
+               justify-content: space-evenly;
+
+               @include media(tablet) {
+                   flex-direction: row;
+               }
 
                &--img {
-                   width: auto;
+                   align-self: center;
                    text-align: center;
 
                    img {
-                    width: 80%;
+                    width: 70%;
+                    max-height: 550px;
                    }
                }
 
                &--info {
                    padding-left: 20px;
 
+                   @include media(tablet) {
+                       padding-left: 0;
+                   }
+
                    p {
                        font-size: 1.4rem;
+
+                       @include media(tablet) {
+                           font-size: 1.6rem;
+                       }
                    }
 
                    p:nth-child(4) {
                     font-size: 1.6rem;
                     font-weight: 600;
                     margin-top: 15px ;
+
+                        @include media(tablet) {
+                            font-size: 1.8rem;
+                        }
                    }
 
                    h2 {
                        margin: 5px 0;
+
+                       @include media(desktop-s) {
+                           margin-bottom: 20px;
+                       }
                    }
 
                    .modal-button {
                        width: 170px;
-                       margin: 10px auto;
+                       margin: 20px auto;
                        padding: 10px;
-                       background-color:#25D366; 
+                       background-color: $color-contraste; 
+
+                        @include media (tablet) {
+                            width: 230px;
+                            margin-top: 30px;
+                        }
+
+                        @include media(desktop-s) {
+                            width: 270px;
+                        }
 
                        a {
                             display: flex;
                             justify-content: space-evenly;
                             align-items: center;
-                            font-weight: 600;
+                            font-weight: 500;
                             text-decoration: none;
                             color: $color-claro;    
+
+                            @include media(desktop-s) {
+                                justify-content: center;
+                                
+                                span {
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .iconify {
+                                font-size: 2rem;
+                            }
                        }
                     }
                }
