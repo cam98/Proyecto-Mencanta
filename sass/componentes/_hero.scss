@@ -38,6 +38,10 @@
                 width: 100vw;
                 object-fit: cover;
                 object-position:center;
+
+                &.top {
+                  object-position: top;
+                }
             }
 
             &__info {
@@ -53,7 +57,7 @@
                 text-align: center;
                 color: $color-claro;
 
-                @include media(desktop-s) {
+                @include media(tablet) {
                   padding-bottom: 5%;
                 }
             }
@@ -66,12 +70,15 @@
                 text-shadow: 4px 3px 6px rgba(0,0,0,0.6);
 
                 @include media(tablet) {
-                  width: 55%;
+                  font-size: 3.5rem;
+                  line-height: 4rem;
+                  width: 70%;
                 }
 
                 @include media(desktop-s) {
                   font-size: 4rem;
                   line-height: 4.5rem;
+                  width: 55%;
                 }
 
                 @include media(desktop-l) {
@@ -84,21 +91,30 @@
                 width: 200px;
                 margin: 0 auto;
                 padding: 15px;
-                font-weight: 600;
+                font-weight: 400;
                 text-transform: uppercase;
                 text-decoration: none;
                 color: $color-claro;
                 background-color: $color-contraste;
+
+                @include media(tablet) {
+                  width: 250px;
+                }
             }
         }    
         
         .slider-navigation{
-            height: 40vh;
+            height: 45vh;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             padding-bottom: 15px;
+
+            
+            @include media(desktop-s) {
+              height: 60vh;
+            }
           }
           
           .slider-navigation .nav-btn{

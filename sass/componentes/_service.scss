@@ -90,19 +90,71 @@
     }
 
     .button__container {
-        width: 100%;
-        margin: 40px 0;
-        text-align: center;
+        width: 200px;
+        margin: 35px auto;
+        padding: 10px;
+        background-color: $color-contraste; 
+        border: 3px solid $color-contraste;
 
-         a {
-             padding: 10px 30px;
-             font-size: 1.4rem;
-             font-weight: 600;
-             text-transform: uppercase;
-             text-decoration: none;
-             border: 3px solid $color-contraste;
-             color: $color-contraste;
-         }
+        @include media (tablet) {
+            width: 230px;
+            margin-top: 30px;
+        }
+
+        @include media(desktop-s) {
+            width: 270px;
+            }
+
+        a {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-weight: 300;
+            text-decoration: none;
+            color: $color-claro;    
+
+            @include media(desktop-s) {
+                justify-content: center;
+                     
+            span {
+                margin-left: 10px;
+            }
+            }
+
+            .iconify {
+                font-size: 2rem;
+                color: $color-claro;
+            }
+        }
     }
+
+    .button__container:hover {
+        background-color: $color-claro;
+        border: 3px solid $color-contraste;
+        
+        a {
+            color: $color-contraste;
+        }
+
+        .iconify {
+            color: $color-contraste;
+        }
+    }
+
+    .podcast__container {
+        margin: 30px auto;
+
+        @include media(desktop-s) {
+            margin: 45px auto;
+            width: 70%;
+        }
+        
+        p {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
 }
 

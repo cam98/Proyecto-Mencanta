@@ -62,6 +62,7 @@ h1 {
   grid-gap: 20px;
   font-size: 3rem;
   font-weight: 600;
+  line-height: 3.4rem;
   font-family: "Prata", sans-serif;
   text-align: center;
   color: #29292E;
@@ -638,12 +639,55 @@ h5 {
 }
 @media only screen and (min-width: 992px) {
   .profiles .mayte__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: auto auto/1fr 1fr;
     width: 80%;
     padding-bottom: 50px;
   }
+  .profiles .mayte__container h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/span 2;
+  }
 }
-.profiles .mayte__container p {
+.profiles .mayte__container .mayte__img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profiles .mayte__container .mayte__img img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+@media only screen and (min-width: 992px) {
+  .profiles .mayte__container .mayte__img img {
+    height: 330px;
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .profiles .mayte__container .mayte__img {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+.profiles .mayte__container .mayte__info p {
   line-height: 2.2rem;
+}
+@media only screen and (min-width: 992px) {
+  .profiles .mayte__container .mayte__info {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
 }
 .profiles__others {
   width: 92%;
@@ -868,6 +912,20 @@ h5 {
 }
 .service .button__container:hover .iconify {
   color: #BC9428;
+}
+.service .podcast__container {
+  margin: 30px auto;
+}
+@media only screen and (min-width: 992px) {
+  .service .podcast__container {
+    margin: 45px auto;
+    width: 70%;
+  }
+}
+.service .podcast__container p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .other-services {
@@ -1337,7 +1395,74 @@ h5 {
 
 .team {
   width: 93%;
-  margin: 0 auto;
+  margin: 30px auto;
+}
+@media only screen and (min-width: 992px) {
+  .team {
+    width: 80%;
+  }
+}
+.team .member__container {
+  margin-bottom: 70px;
+}
+@media only screen and (min-width: 992px) {
+  .team .member__container {
+    margin-bottom: 50px;
+  }
+}
+.team .member__container h3 {
+  margin: 0;
+}
+.team .member__container span {
+  display: block;
+  font-size: 1.4rem;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.team .member__container .member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .team .member__container .member {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+  }
+  .team .member__container .member.right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+.team .member__container .member__img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.team .member__container .member__img img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.team .member__container .member__profile p:last-child {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.team .member__container .member__profile p:last-child a {
+  text-decoration: none;
+  color: #BC9428;
 }
 
 .footer {
