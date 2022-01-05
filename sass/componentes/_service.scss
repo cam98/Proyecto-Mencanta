@@ -148,13 +148,17 @@
             margin: 45px auto;
             width: 70%;
         }
-        
-        p {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
+
+        .podcast__episode {
+            margin-bottom: 20px;
+
+            p {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
         }
-    }
+        }
 
 }
 

@@ -922,7 +922,10 @@ h5 {
     width: 70%;
   }
 }
-.service .podcast__container p {
+.service .podcast__container .podcast__episode {
+  margin-bottom: 20px;
+}
+.service .podcast__container .podcast__episode p {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
