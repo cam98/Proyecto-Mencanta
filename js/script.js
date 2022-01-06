@@ -14,6 +14,19 @@ var slides = document.querySelectorAll('.slide');
 var btns = document.querySelectorAll('.nav-btn');
 let currentSlide = 1;
 
+
+
+// jquery fot toogle dropdown menus 
+$(document).ready(function(){
+  //toggle sub.menus
+  $(".sub-btn").click(function(){
+    $(this).next(".sub-menu").slideToggle();
+  });   
+});
+
+
+
+
 // Javascript for image slider manual navigation
 var manualNav = function(manual){
   slides.forEach((slide) => {

@@ -41,6 +41,10 @@
     #check:checked ~ .navbar__services {
         height: 100vh;
 
+        @include media(tablet) {
+            width: 40%;
+        }
+
         @include media(desktop-s) {
             height: 0%;
         }
@@ -60,6 +64,10 @@
         font-size: 1.6rem;
         transition: all .4s;
 
+        @include media(tablet) {
+            width: 40%;
+        }
+
         @include media(desktop-s) {
             width: auto;
             height: inherit;
@@ -75,10 +83,7 @@
         .services__menu {
             height: 100%;
             display: none;
-            align-items: center;
-            padding: 40px;
-            gap: 40px;
-            flex-direction: column;
+            padding: 30px;
             list-style: none;
 
             @include media(desktop-s) {
@@ -95,12 +100,24 @@
 
             .menu-item {
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-            
-                //mobile
-                justify-content: flex-end;
+                justify-content: center;
+                padding-top: 20px;
+
+                @include media(tablet) {
+                    justify-content: flex-end;
+                }
+
+                & > a {
+                    font-weight: 300;
+                    color: $color-oscuro;
+                    text-decoration: none; 
+                }
 
                 @include media(desktop-s) {
+                    justify-content: center;
+
                     &:hover .sub-menu {
                         pointer-events: all;
                         transform: translateY(0);   
@@ -113,9 +130,7 @@
                         display: flex;
                         align-items: center;
                         gap: 3px;
-                        font-weight: 300;
-                        color: $color-oscuro;
-                        text-decoration: none;
+                      
     
                         svg {
                             color: $color-oscuro;
@@ -132,49 +147,68 @@
                             transition: 0.4s;
                         }  
                     }
-    
-                    .sub-menu {
-                        width: auto;
-                        min-width: 200px;
+                }
+
+                .sub-menu {
+                    width: 70vw;
+                    position: relative;
+                    list-style: none;
+                    background: #fff3f4;
+                    pointer-events: none;
+                    transform: translatey(10px);   
+                    transition: 0.3s;
+                    transition-property: transform, opacity;
+                    overflow: hidden;
+
+                    @include media(tablet) {
+                        width: 40vh;
+                    }
+
+                    @include media(desktop-s) {
+                        width: 230px;
+                        max-width: 350px;
                         position: absolute;
                         background: $color-claro;
                         top: 70px;
                         list-style: none;
+                        line-height: 2rem;
                         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);  
                         pointer-events: none;
                         transform: translateY(20px);   
                         opacity: 0;
                         transition: 0.3s;
                         transition-property: transform, opacity;
-                        @include media(desktop-s) {}
-    
-                        .sub-item {
-                            
-    
-                            @include media(desktop-s) {
-                                position: relative;
-                                padding: 15px 15px;
-                                cursor: pointer;
-                                box-shadow: inset 0px -30px 5px -30px rgba(94, 62, 77, 0.2);
-                            }
-            
-    
-                            &:hover {
-                                text-decoration: none;
-                                background: $color-secundario;
-                            }
-    
-                            a {
-                                color: $color-oscuro;
-                                text-decoration: none;
-                                text-align: center;
-    
-                            }
-                        
-                        }
-                   }
-                }
+                    }
 
+                    .sub-item {
+                        padding: 10px 10px;
+                        cursor: pointer;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        box-shadow: inset 0px -30px 5px -30px rgba(94, 62, 77, 0.2);
+
+                        @include media(desktop-s) {
+                            position: relative;
+                            padding: 15px 15px;
+                            cursor: pointer;
+                            box-shadow: inset 0px -30px 5px -30px rgba(94, 62, 77, 0.2);
+                        }
+        
+
+                        &:hover {
+                            text-decoration: none;
+                            background: $color-secundario;
+                        }
+
+                        a {
+                            color: $color-oscuro;
+                            text-decoration: none;
+                            text-align: center;
+
+                        }
+                    
+                    }
+               }
               
             }
         }
