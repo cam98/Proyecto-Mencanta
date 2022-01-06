@@ -24,23 +24,38 @@ class Header extends HTMLElement {
               </div>
 
               <div class="navbar__services">
-                <ul>
-                    <li><a href="/html/Consultoria de Arte/consultoria.html">Consultoría de Arte</a>
-                      <!-- <ul>
-                        <li><a href="">Asesoría en compraventa</a></li>
-                        <li><a href="">Inventariado y catalogación</a></li>
-                        <li><a href="">Tasación y peritaje de obras de arte</a></li>
-                        <li><a href="">Asesoramiento legal y fiscal</a></li>
-                        <li><a href="">Gestión de colecciones</a></li>
-                        <li><a href="">Montaje, iluminación, embalaje</a></li>
-                      </ul> -->
+                <ul class="services__menu">
+                    <li class="menu-item"><a class="sub-btn" href="/html/Consultoria de Arte/consultoria.html">Consultoría de Arte <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
+                      <ul class="sub-menu">
+                        <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/asesoria.html">Asesoría en compraventa</a></li>
+                        <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/inventariado.html">Inventariado y catalogación</a></li>
+                        <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/tasacion.html">Tasación y peritaje de obras de arte</a></li>
+                        <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/asesoramiento.html">Asesoramiento legal y fiscal</a></li>
+                        <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/gestion.html">Gestión de colecciones</a></li>
+                        <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/montaje.html">Montaje, iluminación, embalaje</a></li>
+                      </ul>
                     </li>
-                    <li><a href="">Representación de Artistas</a></li>
-                    <li><a href="/html/Galeria/galeria.html">Galería</a></li>
-                    <li><a href="/html/Agencia Cultural/agencia.html">Agencia cultural</a></li>
-                    <li><a href="/html/Publicaciones/publicaciones.html">Publicaciones</a></li>
-                    <li><a href="/html/Regala arte/regala.html">Regala Arte</a></li>
-                    <li><a href="/html/Colaboradores/colaboradores.html">Nuestro equipo</a></li>
+
+                    <!-- <li><a href="">Representación de Artistas</a></li> -->
+                    <li class="menu-item"><a href="/html/Galeria/galeria.html">Galería</a></li>
+
+                    <li class="menu-item"><a href="/html/Agencia Cultural/agencia.html">Agencia cultural <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
+                      <ul class="sub-menu">
+                          <li class="sub-item"><a class="item-link" href="/html/Agencia Cultural/proyecto1.html">Proyectos Artísticos</a></li>
+                          <li class="sub-item"><a class="item-link" href="/html/Agencia Cultural/proyecto2.html">Proyecto ¡Que el Arte esté en todas partes!</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item"><a href="/html/Publicaciones/publicaciones.html">Publicaciones <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
+                    <ul class="sub-menu">
+                          <li class="sub-item"><a class="item-link" href="/html/Publicaciones/podcast.html">Podcast</a></li>
+                          <li class="sub-item"><a class="item-link" href="/html/Publicaciones/blog.html">Blog</a></li>
+                        </ul>
+                  </li>
+
+                    <li class="menu-item"><a href="/html/Regala arte/regala.html">Regala Arte</a></li>
+
+                    <li class="menu-item"><a href="/html/Colaboradores/colaboradores.html">Nuestro equipo</a></li>
                 </ul>
               </div>
             </div>
