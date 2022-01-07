@@ -25,7 +25,7 @@ class Header extends HTMLElement {
 
               <div class="navbar__services">
                 <ul class="services__menu">
-                    <li class="menu-item"><a class="sub-btn" href="/html/Consultoria de Arte/consultoria.html">Consultoría de Arte <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
+                    <li class="menu-item"><a class="sub-btn" href="#">Consultoría de Arte <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
                       <ul class="sub-menu">
                         <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/asesoria.html">Asesoría en compraventa</a></li>
                         <li class="sub-item"><a class="item-link" href="/html/Consultoria de Arte/inventariado.html">Inventariado y catalogación</a></li>
@@ -39,14 +39,14 @@ class Header extends HTMLElement {
                     <!-- <li><a href="">Representación de Artistas</a></li> -->
                     <li class="menu-item"><a href="/html/Galeria/galeria.html">Galería</a></li>
 
-                    <li class="menu-item"><a href="/html/Agencia Cultural/agencia.html">Agencia cultural <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
+                    <li class="menu-item"><a class="sub-btn" href="#">Agencia cultural <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
                       <ul class="sub-menu">
                           <li class="sub-item"><a class="item-link" href="/html/Agencia Cultural/proyecto1.html">Proyectos Artísticos</a></li>
                           <li class="sub-item"><a class="item-link" href="/html/Agencia Cultural/proyecto2.html">Proyecto ¡Que el Arte esté en todas partes!</a></li>
                         </ul>
                     </li>
 
-                    <li class="menu-item"><a href="/html/Publicaciones/publicaciones.html">Publicaciones <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
+                    <li class="menu-item"><a class="sub-btn" href="#">Publicaciones <span class="iconify" data-icon="akar-icons:chevron-down"></span></a>
                     <ul class="sub-menu">
                           <li class="sub-item"><a class="item-link" href="/html/Publicaciones/podcast.html">Podcast</a></li>
                           <li class="sub-item"><a class="item-link" href="/html/Publicaciones/blog.html">Blog</a></li>
