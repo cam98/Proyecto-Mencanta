@@ -10,12 +10,6 @@ addEventListener('DOMContentLoaded', () => {
   }
 })
 
-var slides = document.querySelectorAll('.slide');
-var btns = document.querySelectorAll('.nav-btn');
-let currentSlide = 1;
-
-
-
 // jquery fot toogle dropdown menus 
 $(document).ready(function(){
   //toggle sub.menus
@@ -26,6 +20,9 @@ $(document).ready(function(){
 
 
 
+var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.nav-btn');
+let currentSlide = 1;
 
 // Javascript for image slider manual navigation
 var manualNav = function(manual){

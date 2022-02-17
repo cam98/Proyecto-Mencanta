@@ -8,14 +8,17 @@ class Header extends HTMLElement {
         <head>
         <link rel="shortcut icon" type="image/x-icon" href="/images/main/logo.png">
          <link rel="stylesheet" href="/css/mencanta-styles.css">
+         <link href="dist/hamburgers.css" rel="stylesheet">
          
         </head>
         <header>
         <nav>
             <div class="navbar">
-                <input type="checkbox" id="check">
-                 <label for="check" class="navbar__btn"><i><span class="iconify" data-icon="icon-park-outline:hamburger-button" style="color: white;"></span></i>
-                </label>
+              <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
 
               <div class="navbar__logo">
                 <a href="/index.html">
